@@ -1,0 +1,167 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', 'Roboto', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  html, body {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+
+fieldset {
+  padding: 0;
+  border: none;
+}
+
+input, textarea {
+  border: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1790px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    max-width: 944px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 59px;
+}
+@media screen and (max-width: 576px) {
+    h2 {
+      font-size: 24px;
+      line-height: 29px;
+    }
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+@media screen and (max-width: 320px) {
+  h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul {
+  list-style: none;
+}
+
+.cta-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .cta-link {
+    font-size: 12px!important;
+  }
+}
+
+.link--border {
+  background-color: transparent;
+  border: 3px solid #FF9900;
+}
+
+.link-bg {
+  background-color: #FF9900;
+  border: none;
+}

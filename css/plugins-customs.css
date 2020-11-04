@@ -1,0 +1,206 @@
+/*Swiper main*/
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  opacity: .4;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-of-type(1),
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-of-type(3) {
+  margin: 0;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet:nth-of-type(2) {
+  margin: 0 20px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 28px;
+}
+
+/*Swiper reviews*/
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  background-image: url("data:image/svg+xml,%3Csvg width='43' height='42' viewBox='0 0 43 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M40.2432 20.5862L20.5612 0.904174L21.4651 0.000244141L42.0511 20.5862L21.4651 41.1722L20.5612 40.2683L40.2432 20.5862Z' fill='%23666666'/%3E%3C/svg%3E%0A");
+}
+
+.swiper-button-next:hover,
+.swiper-button-next:active {
+  background-image: url("data:image/svg+xml,%3Csvg width='43' height='42' viewBox='0 0 43 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M40.2432 20.5862L20.5612 0.904174L21.4651 0.000244141L42.0511 20.5862L21.4651 41.1722L20.5612 40.2683L40.2432 20.5862Z' fill='%23FF9900'/%3E%3C/svg%3E");
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='42' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.80782 20.5859L21.4899 40.2679L20.5859 41.1719L-4.22529e-05 20.5859L20.5859 -8.45058e-05L21.4899 0.903845L1.80782 20.5859Z' fill='%23666666'/%3E%3C/svg%3E");
+}
+
+.swiper-button-prev:hover,
+.swiper-button-prev:active {
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='42' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.80782 20.5859L21.4899 40.2679L20.5859 41.1719L-4.22529e-05 20.5859L20.5859 -8.45058e-05L21.4899 0.903845L1.80782 20.5859Z' fill='%23FF9900'/%3E%3C/svg%3E");
+}
+
+/*Accordion*/
+.ui-accordion .ui-accordion-header {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #CACACA;
+  font-size: 24px;
+  line-height: 32px;
+  -webkit-transition: color .5s ease-in-out;
+  -o-transition: color .5s ease-in-out;
+  transition: color .5s ease-in-out;
+  outline: none;
+}
+
+@media screen and (max-width: 576px){
+  .ui-accordion .ui-accordion-header {
+    min-height: 116px;
+  }
+}
+
+.ui-accordion .ui-accordion-header:hover,
+.ui-accordion .ui-accordion-header:active {
+  color: #FF9900;
+}
+
+@media screen and (max-width: 1024px){
+  .ui-accordion .ui-accordion-header {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .ui-accordion .ui-accordion-header {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.ui-accordion .ui-accordion-header.ui-state-active {
+  border-bottom-color: transparent;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active,
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  border-top: none;
+  background: transparent;
+  font-weight: 700;
+  color: #333333;
+}
+
+.ui-icon {
+  min-width: 50px;
+  margin-top: 0;
+  margin-right: 2px;
+  background-repeat: no-repeat;
+  background-image: url(../img/ic-pl.png);
+  background-position: center;
+  cursor: pointer;
+  -webkit-transition: background-image 0.5s ease-in-out, -webkit-transform .3s ease-in;
+  transition: background-image 0.5s ease-in-out, -webkit-transform .3s ease-in;
+  -o-transition: background-image 0.5s ease-in-out, transform .3s ease-in;
+  transition: background-image 0.5s ease-in-out, transform .3s ease-in;
+  transition: background-image 0.5s ease-in-out, transform .3s ease-in, -webkit-transform .3s ease-in;
+}
+
+@media screen and (max-width: 576px) {
+  .ui-icon {
+    height: 30px;
+    width: 30px;
+    min-height: 30px;
+    min-width: 30px;
+    background-size: contain;
+  }
+}
+
+.ui-icon-triangle-1-s {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon,
+.ui-state-active .ui-icon, .ui-button:active .ui-icon {
+  background-image: url(../img/ic-pl-hover.png);
+}
+
+.ui-widget.ui-widget-content {
+  border: none;
+}
+
+
+/*Tabs*/
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor,
+.ui-tabs,
+.ui-tabs .ui-tabs-nav {
+  padding: 0;
+}
+
+.ui-tabs .ui-tabs-nav {
+  margin-bottom: 45px;
+}
+
+.ui-widget-header {
+  border: none;
+  background: none;
+  font-weight: 400;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active,
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+  font-weight: 400;
+  color: #FF9900;
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a {
+  color: #333333;
+}
+
+.ui-tabs .ui-tabs-nav li {
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.ui-tabs .ui-tabs-nav li:not(:last-of-type) {
+  margin-right: 96px;
+}
+
+@media screen and (max-width: 768px) {
+  .ui-tabs .ui-tabs-nav li:not(:last-of-type) {
+    margin-right: 44px;
+  }
+}
+
+.ui-tabs .ui-tabs-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .ui-tabs .ui-tabs-panel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+}
+
+.ui-tabs-tab a {
+  font-weight: 400;
+  -webkit-transition: color .3s ease-in-out;
+  -o-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+
+.ui-tabs-tab a:hover {
+  color: #FF9900;
+}
+
+.ui-helper-clearfix:before {
+  content: none;
+}
